@@ -1,7 +1,7 @@
 (*
 name:           Compose mail
-apps:           Airmail 2
-description:    Quickly compose an email in Airmail 2
+apps:           Airmail 3
+description:    Quickly compose an email in Airmail 3
 parameters:
     SUBJ:           Subject line
     SENDR:          Sending account to use
@@ -20,7 +20,7 @@ property BCC : {""}
 property TESNIP : ""
 
 
-tell application "Airmail 2"
+tell application "Airmail 3"
 	set newMail to make new outgoing message with properties {subject:SUBJ, sender:SENDR}
 	repeat with R in RECEIPIENTS
 		make new to recipient at end of newMail's to recipients with properties {name:"", address:R}
